@@ -1,0 +1,13 @@
+name: First Automation
+
+on: 
+    push:
+        branches:
+            - main
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+              - name: Install Apache
+                run: apt install apache2
